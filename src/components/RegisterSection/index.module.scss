@@ -1,0 +1,239 @@
+@import '../../styles/global.scss';
+
+._{
+    padding-top:40px;
+    padding-bottom:40px;
+    .container{
+      
+        .register_form{
+            margin-top: 100px;
+            background-color: $gray;
+            // padding:40px 0;
+            display: flex;
+            justify-content: space-between;
+            .conference_verse{
+                background:linear-gradient( rgba(6, 4, 50, 0.7),  rgba(6, 4, 50, 0.7)),url('../../assets/praying-hero-bg3.jpg');
+                height:inherit;
+                width:40%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 30% -40%;
+                color:$white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding:0 20px;
+                margin-right:5%;
+                @media (max-width:$break-point-md) {
+                    display: none;
+                }
+                .content{
+                    .left_icon{
+                        margin-bottom:10px;
+                        .quote_icon{
+                            font-size: 70px;
+                            color:$light-blue;
+                        }
+                    }
+                    .key_verse{
+                        h2{
+                            text-align: center;
+                            line-height: 2em;
+                            letter-spacing: .05em;
+                            span{
+                                font-style: italic;
+                            }
+                        }
+                    }
+                    .right_icon{
+                        margin-top:10px;
+                        text-align: right;
+                        .quote_icon{
+                            font-size: 70px;
+                            color:$light-blue;
+                        }
+                    }
+                }
+            }
+            form{
+                padding: 40px 70px 40px 0;
+                
+                @media (max-width:$break-point-md) {
+                    padding: 40px 70px 40px 70px;
+                    width:100%;
+                }
+                @media(max-width:$break-point-s) {
+                    padding: 40px 20px 40px 20px;
+                }
+                .form_name{
+                    display: flex;
+                    @media (max-width:$break-point-md) {
+                        flex-direction: column;
+                    }
+                   
+                    .input_item{
+                        &:first-of-type{
+                            margin-right: 35px;
+
+                            @media (max-width:$break-point-md) {
+                                margin-right: 0px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        label{
+                            color: $blue;
+                            font-size: 15px;
+                        }
+                        input{
+                            background-color: transparent;
+                            border:2px solid $blue;
+                            padding-top:12px;
+                            padding-bottom:12px;
+                            border-radius: 5px;
+                            padding-left:20px;
+                            font-family: $font-primary;
+                            color: $blue;
+                            font-size: 18px;
+                            margin-top:8px;
+                            width:22.5vw;
+                            @media (max-width:$break-point-md) {
+                                width:100%;
+                            }
+                            
+                            &::placeholder{
+                                font-family: $font-primary;
+                                color: $blue;
+                                font-size: 18px;
+                            }
+
+                            &:focus{
+                                color: $blue;
+                                font-size: 18px;
+                                outline-color: $blue;
+                            }
+                            
+                        }
+                        .error_message{
+                            color:#FF6262;
+                            font-size:15px;
+                            margin-top:5px;
+                        }
+                    }
+                }
+
+                .form_input{
+                    margin-top:30px;
+                    label{
+                        color: $blue;
+                        font-size: 15px;
+                    }
+                    input{
+                        background-color: transparent;
+                        border:2px solid $blue;
+                        padding-top:12px;
+                        padding-bottom:12px;
+                        border-radius: 5px;
+                        padding-left:20px;
+                        font-family: $font-primary;
+                        color: $blue;
+                        font-size: 18px;
+                        margin-top:8px;
+                        width:48vw;
+                        @media (max-width:$break-point-md) {
+                            width:100%;
+                        }
+
+                        &::placeholder{
+                            font-family: $font-primary;
+                            color: $blue;
+                            font-size: 18px;
+                        }
+
+                        &:focus{
+                            color: $blue;
+                            font-size: 18px;
+                            outline-color: $blue;
+                        }
+                        
+                    }
+                    .error_message{
+                        color:#FF6262;
+                        font-size:15px;
+                        margin-top:5px;
+                    }
+                }
+
+                .option_item{
+                    margin-top:30px;
+                    label{
+                        color: $blue;
+                        font-size: 15px;
+                    }
+
+                    select{
+                        width:48vw;
+                        background-color: $gray;
+                        border:2px solid $blue;
+                        padding-top:12px;
+                        padding-bottom:12px;
+                        border-radius: 5px;
+                        color: $blue;
+                        font-size: 18px;
+                        padding-left:20px;
+                        padding-right:20px;
+                        margin-top:8px;
+                        @media (max-width:$break-point-md) {
+                            width:100%;
+                        }
+                        &:focus{
+                            color: $blue;
+                            font-size: 18px;
+                            outline-color: $blue;
+                        }
+
+                        option{
+                            color: $blue;
+                            font-size: 18px;
+                        }
+                    }
+                    .error_message{
+                        color:#FF6262;
+                        font-size:15px;
+                        margin-top:5px;
+                    }
+                }
+
+                .checkbox_input{
+                    margin-top:40px;
+                    p{
+                        font-size:15.3px;
+
+                        a{
+                            color:$blue;
+                            text-decoration: none;
+                        }
+                    }
+                    .error_message{
+                        color:#FF6262;
+                        font-size:15px;
+                        margin-top:5px;
+                    }
+                }
+
+                .register_button{
+                    margin-top:30px;
+                    .submit{
+                        border:2px solid $blue;
+                        box-shadow: -5px -4px $blue;
+                        color: $blue;
+                        &:hover{
+                            box-shadow: 5px 4px $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

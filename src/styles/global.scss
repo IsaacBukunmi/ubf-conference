@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* === Variables === **/
+$font-primary:'Asap', sans-serif;
+
+$break-point-xs: 420px;
+$break-point-s: 576px;
+$break-point-md: 782px;
+$break-point-l: 992px;
+$break-point-xl: 1024px;
+$break-point-xxl: 1200px;
+
+/* ===================
+== Color Variables ===
+**/
+
+/* General Colors*/
+$black: #000000;
+$white:hsl(0, 0%, 100%);
+$blue: rgb(6,4,50);
+$light-blue:rgb(2, 176, 235);
+$gray:#F1F1F1;
+$dark-gray:#6D6D6D;
+
+%container {
+    padding:0 70px;
+ 
+    @media(max-width:$break-point-s) {
+        padding:0 20px;
+    }
+}

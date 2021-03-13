@@ -1,0 +1,56 @@
+@import '../../styles/global.scss';
+
+._{
+    background-color: $blue;
+    padding-top:30px;
+    padding-bottom:30px;
+    .container{
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        align-items: center;
+        color:$white;
+        @media (max-width:$break-point-s) {
+           display: block;
+        }
+        .address{
+            @media (max-width:$break-point-s) {
+                margin-bottom: 40px;
+            }
+            .logo{
+                img{
+                    height:70px;
+                }
+            }
+            p{
+                padding:10px 0 10px 0;
+            }
+        }  
+        .mid_content{
+            @media (max-width:$break-point-s) {
+                margin-bottom: 40px;
+            }
+            .social{
+                .social_icon{
+                    margin-right:40px;
+                    margin-bottom:20px;
+                    font-size:30px;
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+            }
+            a{
+                color:$white;
+            } 
+            p{
+                margin-top:20px;
+            }
+        }
+        .copyright{
+            align-self: flex-end;
+            margin-top:10px;
+        }
+    }
+}

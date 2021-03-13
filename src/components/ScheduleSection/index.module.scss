@@ -1,0 +1,107 @@
+@import '../../styles/global.scss';
+
+._{
+    padding-bottom: 100px;
+    .container{
+        @extend %container;
+        .content{
+           padding-top: 30px;
+            .tab_container{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                .tab_button{
+                    height:70px;
+                    width:230px;
+                    background-color: #f3f3f3;
+                    border:1.5px solid $gray;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor:pointer;
+                    color:$blue;
+                    transition: all .2s ease;
+                    p{
+                        padding:2px;
+                    }
+                    &:hover{
+                        background-color: #ffffff;
+                        color:$light-blue;
+                        font-weight: bold;
+                        box-shadow: inset 0px 5px $light-blue;
+                    }
+                }
+                .tab_button.active_tab, .tab_button.active_tab:hover{
+                    background-color: #ffffff;
+                    color:$light-blue;
+                    font-weight: bold;
+                    box-shadow: inset 0px 5px $light-blue;
+                }
+            }
+            .schedule_container{
+                margin-top: 50px;
+                .schedule_item{
+                    display: flex;
+                    .circle_line{
+                        display: flex;
+                        flex-direction: column;
+                        width:10%;
+                        @media(max-width:$break-point-md) {
+                            width:15%;
+                        }
+                        @media(max-width:$break-point-xs) {
+                            width:25%;
+                        }
+                        .circle{
+                            width:50px;
+                            height:50px;
+                            border-radius: 50%;
+                            background-color: transparent;
+                            border:5px solid $light-blue;
+                            align-self: center;
+                        }
+                        .line{
+                            width:5px;
+                            height:100px;
+                            background-color: $light-blue;
+                            align-self: center;
+                        }
+                    }
+                    .schedule_content{
+                        h3{
+                            color:$blue;
+                            padding-bottom:10px;
+                            font-size:25px;
+                        }
+                        p{
+                            font-size:18px;
+                            color:$blue;
+                        }
+                        .schedule_detail{
+                            display: flex;
+                            padding-top:5px;
+                            p{
+                                font-size:18px;
+                                padding-right: 20px;
+                                .schedule_icon{
+                                    color:$light-blue;
+                                    position: relative;
+                                    top:3px;
+                                }
+                                span{
+                                    color:$blue;
+                                    font-weight:400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .schedule_button{
+                text-align: center;
+                margin-top:70px;
+            }
+        }
+    }
+}

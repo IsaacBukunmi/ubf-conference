@@ -1,0 +1,31 @@
+@import '../../styles/global.scss';
+
+._{
+    h2.in_session{
+        text-align: center;
+        color:$white;
+        margin:50px 0;
+        font-size: 2.8em;
+    }
+    .timer_container{
+        color: $white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom:50px;
+        @media (max-width:$break-point-s) {
+            margin-top:30px;
+        }
+        .time_item{
+            width:20%;
+            text-align: center;
+            @media (max-width:$break-point-s) {
+                width:25%;
+            }
+            h2{
+                font-size: 2.8em;
+            }
+        }
+    }
+}

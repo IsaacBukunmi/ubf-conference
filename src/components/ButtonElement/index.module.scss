@@ -1,0 +1,19 @@
+@import '../../styles/global.scss';
+
+button.primary_button{
+    background-color: transparent;
+    color:$light-blue;
+    border:none;
+    height: 45px;
+    padding:0 40px;
+    border:2px solid $light-blue;
+    box-shadow: -5px -4px $light-blue;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    outline:transparent;
+    font-size: 17px;
+    &:hover{
+        box-shadow: 5px 4px $light-blue;
+    }
+}

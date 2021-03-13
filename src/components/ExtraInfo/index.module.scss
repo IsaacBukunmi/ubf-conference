@@ -1,0 +1,31 @@
+@import '../../styles/global.scss';
+
+._{
+    background-color: $blue;
+    .container{
+        @extend %container;
+        padding-top:40px;
+        padding-bottom: 40px;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .info_item{
+            text-align: center;
+            color:$white;
+            flex:1 0 20%;
+            margin:5px;
+            @media screen and (max-width:$break-point-md) {
+                flex:1 0 30%;
+                margin-bottom:20px;
+            }
+            @media screen and (max-width:$break-point-s) {
+                flex:1 0 40%;
+                
+            }
+            .info_icon{
+                color: $white  !important;
+                font-size: 50px;
+            }
+        }
+    }
+}

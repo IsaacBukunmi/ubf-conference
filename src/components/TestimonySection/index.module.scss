@@ -1,0 +1,48 @@
+@import '../../styles/global.scss';
+
+._{
+    background:linear-gradient( rgba(2, 176, 235, 0.8), rgba(2, 176, 235, 0.8)),url('https://images.unsplash.com/photo-1556159992-e189f8e50104?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-color: $blue;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:70vh;
+    margin-bottom:100px;
+    .container{
+        .content{
+            color:$white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:70%;
+            text-align: center;
+            height:70vh;
+            margin:0 auto;
+            @media(max-width:$break-point-s) {
+                width:80%;
+            }
+            @media(max-width:$break-point-xs) {
+                width:90%;
+            }
+            h3{
+                font-size: 40px;
+                margin-bottom:20px;
+                @media(max-width:$break-point-s) {
+                    font-size: 35px;
+                }
+                @media(max-width:$break-point-xs) {
+                    font-size: 30px;
+                }
+            }
+            a{
+                font-size:20px;
+                font-weight: bold;
+                font-style: italic;
+                color:$white;
+            }
+        }
+    }
+}

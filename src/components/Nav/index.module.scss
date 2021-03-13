@@ -1,0 +1,120 @@
+@import '../../styles/global.scss';
+
+._{
+    nav{
+        position: fixed;
+        z-index:1000;
+        top:0;
+        width: 100%;
+        background-color: transparent;
+        padding:10px 0px;
+        @media (max-width:$break-point-s) {
+            border-radius: 0 0 20px 20px;
+        }
+        .nav_container{
+            @extend %container;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .logo{
+                img{
+                    height:60px;
+                }
+            }
+            .hamburger_menu{
+                height:25px;
+                width:37px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+    
+                span{
+                    width:100%;
+                    height:3px;
+                    background-color:$white;
+                    position: absolute;
+                    
+                    &:nth-child(1){
+                        top:0px;
+                        transition: all .5s ease-in-out;
+                    }
+    
+                    &:nth-child(2){
+                        top:10px;
+                        width:75%;
+                        transition: all .5s ease-in-out;
+                    }
+    
+                    &:nth-child(3){
+                        top:20px;
+                        width:50%;
+                        transition: all .5s ease-in-out;
+                    }
+                }
+            }
+            .hamburger_menu.toggle{
+                span{
+                    &:nth-child(1){
+                        top:10px;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:nth-child(3){
+                        top:10px;
+                        width: 100%;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_container{
+        z-index: 1;
+        position: fixed;
+        width:300px;
+        height: 100vh;
+        background-color: $blue;
+        right:-100%;
+        top:0;
+        transition: 800ms;
+        @media (max-width:$break-point-s) {
+            width:70%
+        }
+        ul{
+            list-style: none;
+            color:$white;
+            margin-top:15vh;
+            li {
+                margin-bottom:80px;
+                font-size: 25px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+                
+                a{
+                    color:$white;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: all .2s ease;
+                    &:hover{
+                        color: $light-blue;
+                    }
+                    &:target{
+                        color: $light-blue;
+                    }
+                }
+            }
+        }
+    }
+    .menu_container.active{
+        right:0;
+        transition: 700ms;
+    }
+}
+

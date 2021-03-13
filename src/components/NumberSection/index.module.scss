@@ -1,0 +1,44 @@
+@import '../../styles/global.scss';
+
+._{
+    background-color: $gray;
+    padding-top:60px;
+    padding-bottom:60px;
+    .container{
+        @extend %container;
+        .attendants{
+            display: flex;
+            justify-content: space-around;
+            .num{
+                color:$blue;
+                text-align: center;
+                h2{
+                    font-size:80px;
+                    @media(max-width:$break-point-xs) {
+                        font-size:50px;
+                    }
+                }
+            }
+        }
+        .question{
+            margin-top:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            h3{
+                font-size:30px;
+                margin-bottom:20px;
+            }
+            .register{
+                border:2px solid $blue;
+                box-shadow: -5px -4px $blue;
+                color: $blue;
+                &:hover{
+                    box-shadow: 5px 4px $blue;
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../styles/global.scss';
+
+.header{
+    // border-left:3px solid $blue;
+    margin-bottom:50px;
+    height:50px;
+    // display: flex;
+    // align-items: center;
+    text-align: center;
+    h2{
+        // padding-left:30px;
+        font-size: 1.8em;
+        color: $blue;
+    }
+    p{
+        color: $light-blue;
+        padding-top: 10px;
+    }
+    svg{
+        width:150px;
+        margin-top:10px;
+    }
+}

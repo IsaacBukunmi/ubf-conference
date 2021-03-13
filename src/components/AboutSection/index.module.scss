@@ -1,0 +1,77 @@
+@import '../../styles/global.scss';
+
+._{
+    // margin-top:100px;
+    // margin-bottom:100px;
+    padding-top:100px;
+    padding-bottom:100px;
+    // background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../../assets/bible-study.jpg');
+    .container{
+        @extend %container;
+       
+        .content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top:100px;
+            @media (max-width:$break-point-md) {
+                display: block;
+            }
+           
+            .text_section{
+                width:40vw;
+                @media (max-width:$break-point-md) {
+                    width: 100%;
+                }
+                .mobile_image_section{
+                    display: none;
+                    width: 100%;
+                    margin:10px 0;
+                    img{
+                        width:100%;
+                        height: auto;
+                        object-fit: cover;
+                        border-radius: 20px;
+                        filter: drop-shadow(0 0 0.45rem $blue);
+                    }
+                    @media (max-width:$break-point-md) {
+                        display: block;
+                    }
+                }
+                p{
+                    line-height: 2rem;
+                    color: $blue;
+                    a{
+                        text-decoration: underline;
+                        color:$light-blue;
+                    }
+                }
+            }
+
+            .image_section{
+                width:40vw;
+                height: auto;
+                @media (max-width:$break-point-md) {
+                    width: 100%;
+                    margin-top:30px;
+                    display: none;
+                }
+                img{
+                    width:100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    filter: drop-shadow(0 0 0.45rem $blue);
+                }
+            }
+        }
+        .content.part_two{
+            flex-direction: row-reverse;
+            margin-top:140px;
+            @media (max-width:$break-point-md) {
+                margin-top:70px;
+            }
+        }
+    }
+}
