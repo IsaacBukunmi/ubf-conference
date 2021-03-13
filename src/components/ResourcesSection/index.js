@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './index.module.scss';
-import msg from '../../assets/praying-hero-bg3.jpg'
 import { FaDownload } from "react-icons/fa";
 import SectionHeader from '../SectionHeader';
 const ResourcesSection = () => {

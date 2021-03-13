@@ -25,19 +25,25 @@ const RegisterSection = () => {
         console.log(attendee)
         setLoading(true)
         axios.post('https://sheet.best/api/sheets/618f13a7-1792-4ea7-9789-fe2fcc8ca3a8', attendee)
-          .then(function (response) {
-            console.log(response);
-            setLoading(false)
-            swal({
-                title: "Thank you for registering!",
-                text: "We hope to see you join us for an awesome experience",
-                icon: "success",
-              });
-          })
-          .catch(function (error) {
-            console.log(error);
-            setLoading(false)
-          });
+            .then(function (response) {
+                console.log(response);
+                setLoading(false)
+                swal({
+                    title: "Thank you for registering!",
+                    text: "We hope to see you join us for an awesome experience",
+                    icon: "success",
+                });
+                setAttendee({firstname: "", lastname: "", phonenumber: "", email: "", gender: "", maritalstatus: "", membershipstatus: "", chapter: "", attendancemode: "", invitedby: ""})
+            })
+            .catch(function (error) {
+                console.log(error);
+                setLoading(false)
+                swal({
+                    title: "Something went wrong",
+                    text: "Check your details and try again",
+                    icon: "error",
+                });
+            });
     }
 
     return(
@@ -51,7 +57,7 @@ const RegisterSection = () => {
                                 <FaQuoteLeft className={styles.quote_icon} />
                             </div>
                             <div className={styles.key_verse}>
-                                <h2>For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life <br /> <span>- John 3:16</span></h2>
+                                <h2>If there is no resurrection of the dead, then not even Christ has been raised. And if Christ has not been raised, our preaching is useless and so is your faith. <br /> <span>- 1 Corintians 15:13-14</span></h2>
                             </div>
                             <div className={styles.right_icon}>
                                 <FaQuoteRight className={styles.quote_icon} />
@@ -88,7 +94,7 @@ const RegisterSection = () => {
                         <div className={styles.form_input}>
                             <label>Phone Number</label> <br />
                             <input 
-                                type="text" 
+                                type="number" 
                                 name="phonenumber" 
                                 placeholder="080XXX" 
                                 className={styles.input}

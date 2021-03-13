@@ -13,7 +13,7 @@ const HeroSection = () => {
                     <div className={styles.conf_topic}>
                         <small>UBF Easter Conference 2021</small>
                         <h1>THE GOSPEL OF CHRIST</h1>
-                        <p>John 3:16</p>
+                        <p>1 Corintians 15:1-14</p>
                     </div>
                     <div className={styles.division_line}></div>
                     <div className={styles.countdown}>

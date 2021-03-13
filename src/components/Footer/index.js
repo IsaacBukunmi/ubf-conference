@@ -15,7 +15,7 @@ const Footer = () => {
                         <img src={ubf_logo} alt="ubf logo"/>
                     </div>
                     <p>UBF Nigeria HQ</p>
-                    <p>No 7, Zansi Close, Onike-Iwaya Road</p>
+                    <p>No 6, Zansi Close, Onike-Iwaya Road</p>
                 </div>
                 <div className={styles.mid_content}>
                     <div className={styles.social}>
