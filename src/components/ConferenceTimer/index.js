@@ -10,7 +10,7 @@ const ConferenceTimer = (props) => {
     const [seconds, setSeconds] = useState('00')
     const [timeUp, setTimeUp] = useState(false)
 
-    const day_string = days > 1 ? 'days' : 'day'
+    const day_string = days > 1 ? 'Days' : 'Day'
 
     useEffect(() => {
         setInterval(() => {

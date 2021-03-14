@@ -23,11 +23,11 @@ const Footer = () => {
                         <FaInstagram className={styles.social_icon} />
                         <FaTwitter className={styles.social_icon} />
                     </div>
-                    <a href="#">ubfnigeria@gmail.com</a>
-                    <p>08123934232, 09042429012</p>
+                    <a href="mailto: ubfnigeria@gmail.com">ubfnigeria@gmail.com</a>
+                    <p>0807 060 2299</p>
                 </div>
                 <div className={styles.copyright}>
-                    <p>&copy; Copyright University Bible Fellowship 2021</p>
+                    <p>&copy; All rights reservred. University Bible Fellowship 2021</p>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ const AboutSection = () => {
                         </div>
                         <p>University Bible Fellowship (UBF) is an international evangelical church (non-denominational) dedicated to Christ and his kingdom. </p> <br/>
                         <p>Our main focus is to study the Bible, grow in the grace and knowledge of our Lord and Savior Jesus Christ, and live according to his teachings as his disciples.</p> <br/>
-                        <p>We especially pray to reach University and College students and help them grow as Christ's lifelong disciples. Our goal is to obey our Lord’s commands to love one another and to go and make disciples of all nations (Jn 13:34; Mt 28:18-20). <a href="https://en.wikipedia.org/wiki/University_Bible_Fellowship">Learn more</a></p>
+                        <p>We especially pray to reach University and College students and help them grow as Christ's lifelong disciples. Our goal is to obey our Lord’s commands to love one another and to go and make disciples of all nations (Jn 13:34; Mt 28:18-20). <a href="https://ubf.org/">Learn more</a></p>
                     </div>
                     <div className={styles.image_section}>
                         <img src={bible_study} alt="bible study"/>

@@ -18,7 +18,7 @@ const ExtraInfo = () => {
                 </div>
                 <div className={styles.info_item}>
                     <IoTime className={styles.info_icon} />
-                    <p>8:30am - 6:00pm daily</p>
+                    <p>9:00am - 6:00pm daily</p>
                 </div>
                 <div className={styles.info_item}>
                     <RiGlobalFill className={styles.info_icon} />
