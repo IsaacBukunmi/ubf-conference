@@ -24,9 +24,9 @@ const ScheduleSection = () => {
                                 return(
                                     <div 
                                     className={`${styles.tab_button} ${index === value && styles.active_tab}`}
-                                    onClick={() => setValue(index)} key={schedule.id}>
-                                        <p>{schedule.day}</p> 
-                                        <p>{schedule.date}</p> 
+                                    onClick={() => setValue(index)} key={schedule?.id}>
+                                        <p>{schedule?.day}</p> 
+                                        <p>{schedule?.date}</p> 
                                     </div> 
                                 )
                             })
@@ -45,8 +45,15 @@ const ScheduleSection = () => {
                                             <h3>{program?.heading}</h3>
                                             <p>{program?.subheading}</p>
                                             <div className={styles.schedule_detail}>
-                                                <p><BsPerson className={styles.schedule_icon} /> <span>{program?.vessel}</span></p>
-                                                <p><IoTimeOutline className={styles.schedule_icon} /> <span>{program?.time}</span></p>
+                                                {
+                                                    program?.vessel &&
+                                                    <p><BsPerson className={styles.schedule_icon} /> <span>{program?.vessel}</span></p>
+                                                }
+                                                {   
+                                                    program?.time &&
+                                                    <p><IoTimeOutline className={styles.schedule_icon} /> <span>{program?.time}</span></p>
+                                                }
+                                                
                                             </div>
                                         </div>
                                     </div>

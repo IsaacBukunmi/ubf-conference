@@ -9,21 +9,21 @@ const schedule_data = [
                 heading: "Arrival",
                 subheading: "Arrival of all participant to the physical venue",
                 vessel: "Everyone",
-                time: "4:00pm"
+                time: "2:00pm"
             },
             {
                 id:"ap22",
                 heading: "Opening Message",
                 subheading: "Teaching the word of God (1 Timothy 2:1-26)",
                 vessel: "Shep Anu",
-                time: "6:00pm"
+                time: "4:00pm"
             },
             {
                 id:"ap23",
                 heading: "Message II",
                 subheading: "Jesus high priestly prayer (John 17:1-26)",
                 vessel: "Bro Johnson",
-                time: "7:30pm"
+                time: "6:00pm"
             }
         ]
     }, 
@@ -49,8 +49,8 @@ const schedule_data = [
             {
                 id:"ap33",
                 heading: "Life Testimony",
-                subheading: "Story of my past miserable life",
-                vessel: "Bro Mayowa",
+                subheading: "",
+                vessel: "",
                 time: "2:00pm"
             },
             {
@@ -59,6 +59,13 @@ const schedule_data = [
                 subheading: "Christ in me (1 Corinthians 15:1-11)",
                 vessel: "Bro Isaac 0.",
                 time: "4:00pm"
+            },
+            {
+                id:"ap35",
+                heading: "Symposium",
+                subheading: "Understanding who we are",
+                vessel: "Dr. Larry Crabb",
+                time: "5:30pm"
             }
         ]
     }, 
@@ -70,14 +77,14 @@ const schedule_data = [
             {   
                 id:"ap41",
                 heading: "Group Bible Study",
-                subheading: "Arrival of all participant to the physical venue",
+                subheading: "The Gospel must be preached (Mark 13)",
                 vessel: "Everyone",
                 time: "8:00am"
             },
             {   
                 id:"ap42",
                 heading: "Closing Message",
-                subheading: "The Gospel must be preached",
+                subheading: "The Gospel must be preached (Mark 13)",
                 vessel: "Pastor Abraham",
                 time: "11:00am"
             }
