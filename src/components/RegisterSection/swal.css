@@ -1,9 +1,11 @@
 .swal-title {
     color:rgb(6,4,50);
+    text-align:center;
 }
 
 .swal-text {
    color:rgb(2, 176, 235);
+   text-align:center;
 }
 
 .swal-button {

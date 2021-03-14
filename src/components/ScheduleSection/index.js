@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SectionHeader from '../SectionHeader';
+import swal from 'sweetalert';
 import { BsPerson } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa";
@@ -10,8 +11,15 @@ import schedule_data from './scheduleData';
 const ScheduleSection = () => {
 
     const [value, setValue] = useState(0)
-
     const{ programs } = schedule_data[value]
+
+    const handleScheduleDownload = () => {
+        swal({
+            title: "Coming Soon",
+            text: "Schedule not currently available for download, check back later",
+            icon: "info",
+        });
+    }
     
     return(
         <div className={styles._} id="schedule">
@@ -62,7 +70,7 @@ const ScheduleSection = () => {
                         }
                     </div>
                     <div className={styles.schedule_button}>
-                        <PrimaryButton>Download Schedule <FaDownload className={styles.download_icon} /></PrimaryButton>
+                        <PrimaryButton onClick={handleScheduleDownload}>Download Schedule <FaDownload className={styles.download_icon} /></PrimaryButton>
                     </div>
                 </div>
             </div>
