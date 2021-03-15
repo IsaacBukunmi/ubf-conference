@@ -11,6 +11,9 @@
             // padding:40px 0;
             display: flex;
             justify-content: space-between;
+            @media (max-width:$break-point-md) {
+                flex-direction: column-reverse;
+            }
             .conference_verse{
                 background:linear-gradient( rgba(6, 4, 50, 0.7),  rgba(6, 4, 50, 0.7)),url('../../assets/praying-hero-bg3.jpg');
                 height:inherit;
@@ -26,7 +29,7 @@
                 padding:0 20px;
                 margin-right:5%;
                 @media (max-width:$break-point-md) {
-                    display: none;
+                   width: 100%;
                 }
                 .content{
                     .left_icon{
