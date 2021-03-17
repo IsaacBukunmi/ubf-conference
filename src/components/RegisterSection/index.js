@@ -24,7 +24,7 @@ const RegisterSection = () => {
         e.preventDefault()
         console.log(attendee)
         setLoading(true)
-        axios.post('https://sheet.best/api/sheets/618f13a7-1792-4ea7-9789-fe2fcc8ca3a8', attendee)
+        axios.post('https://sheet.best/api/sheets/bb7fad12-e242-46ce-88a0-513ec3da3af3', attendee)
             .then(function (response) {
                 console.log(response);
                 setLoading(false)
