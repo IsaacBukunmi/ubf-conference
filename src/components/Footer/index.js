@@ -23,7 +23,7 @@ const Footer = () => {
                         <FaInstagram className={styles.social_icon} />
                         <FaTwitter className={styles.social_icon} />
                     </div>
-                    <a href="mailto: ubfnigeria@gmail.com">ubfnigeria@gmail.com</a>
+                    <a href="mailto: nigeriaubf@gmail.com">nigeriaubf@gmail.com</a>
                     <p>0807 060 2299</p>
                 </div>
                 <div className={styles.copyright}>
