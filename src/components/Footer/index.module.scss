@@ -32,17 +32,32 @@
                 margin-bottom: 40px;
             }
             .social{
-                .social_icon{
+                a {
                     margin-right:40px;
                     margin-bottom:20px;
-                    font-size:30px;
+                    &:hover{
+                        color: $light-blue;
+                        transition: 500ms;
+                    }
                     &:last-of-type{
                         margin-right: 0;
+                    }
+                    .social_icon{
+                        margin-right:40px;
+                        margin-bottom:20px;
+                        font-size:30px;
+                        &:last-of-type{
+                            margin-right: 0;
+                        }
                     }
                 }
             }
             a{
                 color:$white;
+                &:hover{
+                    color: $light-blue;
+                    transition: 500ms;
+                }
             } 
             p{
                 margin-top:20px;

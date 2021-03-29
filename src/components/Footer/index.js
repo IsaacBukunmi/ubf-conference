@@ -19,9 +19,9 @@ const Footer = () => {
                 </div>
                 <div className={styles.mid_content}>
                     <div className={styles.social}>
-                        <FaFacebook className={styles.social_icon} />
-                        <FaInstagram className={styles.social_icon} />
-                        <FaTwitter className={styles.social_icon} />
+                        <a href="https://www.facebook.com/UBFUnilag/?ref=page_internal"><FaFacebook className={styles.social_icon} /></a> 
+                        <a href=""><FaInstagram className={styles.social_icon} /></a>
+                        <a href="https://twitter.com/ubfworldmission"><FaTwitter className={styles.social_icon} /></a>
                     </div>
                     <a href="mailto: nigeriaubf@gmail.com">nigeriaubf@gmail.com</a>
                     <p>0807 060 2299</p>

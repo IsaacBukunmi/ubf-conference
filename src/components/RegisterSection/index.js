@@ -159,13 +159,13 @@ const RegisterSection = () => {
                             <label>Mode of Attendance</label> <br />
                             <select name="attendancemode"  id="attendance" className={styles.select} value={attendee.attendancemode} onChange={handleChange} required>
                                 <option value="">--Select your attendance mode--</option>
-                                <option value="Physical">Physical</option>
+                                <option value="Physical" disabled>Physical</option>
                                 <option value="Online">Online</option>
                             </select>        
                         </div>
                         
                         <div className={styles.form_input}>
-                            <label>Who invited you? (input name if there's any)</label> <br />
+                            <label>Who invited you for the easter conference? (input name if there's any)</label> <br />
                             <input 
                                 type="text" 
                                 name="invitedby" 
