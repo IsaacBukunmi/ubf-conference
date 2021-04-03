@@ -42,14 +42,14 @@ const schedule_data = [
             {
                 id:"ap32",
                 heading: "Breakfast",
-                subheading: "",
+                subheading: "...",
                 vessel: "Everyone",
                 time: "7:30am"
             },
             {
                 id:"ap33",
                 heading: "Bible Study",
-                subheading: "The suffering and glory of God's Servant (Isaiah 52:13-53:12. Key Verse: 53:5)",
+                subheading: "The suffering and glory of God's Servant (Isaiah 52:13-53:12.)",
                 vessel: "Everyone",
                 time: "8:30am"
             },
@@ -63,63 +63,63 @@ const schedule_data = [
             {
                 id:"ap35",
                 heading: "Life Testimony",
-                subheading: "",
+                subheading: "...",
                 vessel: "",
                 time: "11:00am"
             },
             {
                 id:"ap36",
                 heading: "Lunch",
-                subheading: "",
+                subheading: "...",
                 vessel: "Everyone",
                 time: "1:30pm"
             },
             {
                 id:"ap37",
                 heading: "Life Testimony",
-                subheading: "",
+                subheading: "...",
                 vessel: "",
                 time: "2:30pm"
             },
             {
                 id:"ap38",
-                heading: "Testimony Sharing, Testimony Writing",
-                subheading: "",
+                heading: "Testimony Sharing & Writing",
+                subheading: "...",
                 vessel: "Everyone",
                 time: "3:00pm"
             },
             {
                 id:"ap39",
                 heading: "Dinner",
-                subheading: "",
+                subheading: "...",
                 vessel: "",
                 time: "6:00pm"
             },
             {
-                id:"ap40",
+                id:"ap391",
                 heading: "Message II",
                 subheading: "Christ in me (1 Corinthians 15:1-11)",
                 vessel: "Bro Isaac 0.",
                 time: "7:00pm"
             },
             {
-                id:"ap41",
+                id:"ap392",
                 heading: "Symposium",
                 subheading: "Understanding who we are",
                 vessel: "Dr. Larry Crabb",
                 time: "8:00pm"
             },
             {
-                id:"ap42",
+                id:"ap393",
                 heading: "Life Testimony",
-                subheading: "",
+                subheading: "...",
                 vessel: "",
-                time: ""
+                time: "8:30pm"
             },
             {
-                id:"ap43",
+                id:"ap394",
                 heading: "African Night",
-                subheading: "",
+                subheading: "...",
                 vessel: "Vocal Team",
                 time: ""
             }
@@ -133,14 +133,14 @@ const schedule_data = [
             {
                 id:"ap41",
                 heading: "Morning Devotion",
-                subheading: "",
+                subheading: "...",
                 vessel: "Everyone",
                 time: "7:00am"
             },
             {
                 id:"ap42",
                 heading: "Breakfast",
-                subheading: "",
+                subheading: "...",
                 vessel: "Everyone",
                 time: "7:30am"
             },
@@ -161,7 +161,7 @@ const schedule_data = [
             {   
                 id:"ap45",
                 heading: "Prayer",
-                subheading: "",
+                subheading: "...",
                 vessel: "",
                 time: "12:30pm"
             }
