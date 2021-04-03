@@ -6,6 +6,9 @@
         color:$white;
         margin:50px 0;
         font-size: 2.2em;
+        @media (max-width:$break-point-s) {
+            margin:30px 0;
+        }
     }
     .timer_container{
         color: $white;
