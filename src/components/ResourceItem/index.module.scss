@@ -1,0 +1,40 @@
+.resources_item{
+    position: relative;
+    width:250px;
+    height: 200px;
+    flex: 0 0 auto;
+    margin:12px;
+   
+    cursor: pointer;
+    .resources_image{
+        width:250px;
+        height: 100%;
+        img{
+            height: 100%;
+            width:100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    .resources_name{
+        position: absolute;
+        top:0;
+        left:0;
+        background: linear-gradient(295.74deg, rgba(0, 0, 0, 0.63) 23.12%, rgba(0, 0, 0, 0.22) 100.65%);
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+
+        p{
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            font-size:20px;
+            text-transform: capitalize;
+            text-align: center;
+            padding:0 10px;
+        }
+    }
+}

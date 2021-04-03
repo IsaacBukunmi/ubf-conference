@@ -34,38 +34,94 @@ const schedule_data = [
         programs: [
             {
                 id:"ap31",
-                heading: "Bible Study",
-                subheading: "The suffering servant (Isaiah 53:1-12)",
+                heading: "Morning Devotion",
+                subheading: "Eloi, ELoi, Lama Sabachthani (Mark 15:33-47)",
                 vessel: "Everyone",
-                time: "8:00am"
+                time: "7:00am"
             },
             {
                 id:"ap32",
+                heading: "Breakfast",
+                subheading: "",
+                vessel: "Everyone",
+                time: "7:30am"
+            },
+            {
+                id:"ap33",
+                heading: "Bible Study",
+                subheading: "The suffering and glory of God's Servant (Isaiah 52:13-53:12. Key Verse: 53:5)",
+                vessel: "Everyone",
+                time: "8:30am"
+            },
+            {
+                id:"ap34",
                 heading: "Message I",
                 subheading: "The suffering servant (Isaiah 53:1-12)",
                 vessel: "Bro Alvin",
                 time: "10:00am"
             },
             {
-                id:"ap33",
+                id:"ap35",
                 heading: "Life Testimony",
                 subheading: "",
                 vessel: "",
-                time: "2:00pm"
+                time: "11:00am"
             },
             {
-                id:"ap34",
+                id:"ap36",
+                heading: "Lunch",
+                subheading: "",
+                vessel: "Everyone",
+                time: "1:30pm"
+            },
+            {
+                id:"ap37",
+                heading: "Life Testimony",
+                subheading: "",
+                vessel: "",
+                time: "2:30pm"
+            },
+            {
+                id:"ap38",
+                heading: "Testimony Sharing, Testimony Writing",
+                subheading: "",
+                vessel: "Everyone",
+                time: "3:00pm"
+            },
+            {
+                id:"ap39",
+                heading: "Dinner",
+                subheading: "",
+                vessel: "",
+                time: "6:00pm"
+            },
+            {
+                id:"ap40",
                 heading: "Message II",
                 subheading: "Christ in me (1 Corinthians 15:1-11)",
                 vessel: "Bro Isaac 0.",
-                time: "4:00pm"
+                time: "7:00pm"
             },
             {
-                id:"ap35",
+                id:"ap41",
                 heading: "Symposium",
                 subheading: "Understanding who we are",
                 vessel: "Dr. Larry Crabb",
-                time: "5:30pm"
+                time: "8:00pm"
+            },
+            {
+                id:"ap42",
+                heading: "Life Testimony",
+                subheading: "",
+                vessel: "",
+                time: ""
+            },
+            {
+                id:"ap43",
+                heading: "African Night",
+                subheading: "",
+                vessel: "Vocal Team",
+                time: ""
             }
         ]
     }, 
@@ -74,19 +130,40 @@ const schedule_data = [
         day: "Day 3", 
         date: "April 4th", 
         programs: [
-            {   
+            {
                 id:"ap41",
-                heading: "Group Bible Study",
-                subheading: "The Gospel must be preached (Mark 13)",
+                heading: "Morning Devotion",
+                subheading: "",
                 vessel: "Everyone",
-                time: "8:00am"
+                time: "7:00am"
+            },
+            {
+                id:"ap42",
+                heading: "Breakfast",
+                subheading: "",
+                vessel: "Everyone",
+                time: "7:30am"
             },
             {   
-                id:"ap42",
+                id:"ap43",
+                heading: "Group Bible Study",
+                subheading: "The Gospel must first be preached to all nations (Mark 13:1-25)",
+                vessel: "Everyone",
+                time: "8:30am"
+            },
+            {   
+                id:"ap44",
                 heading: "Closing Message",
                 subheading: "The Gospel must be preached (Mark 13)",
                 vessel: "Pastor Abraham",
                 time: "11:00am"
+            },
+            {   
+                id:"ap45",
+                heading: "Prayer",
+                subheading: "",
+                vessel: "",
+                time: "12:30pm"
             }
         ]
     }, 

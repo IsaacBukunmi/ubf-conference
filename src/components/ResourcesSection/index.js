@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import swal from 'sweetalert';
 import styles from './index.module.scss';
-import { FaDownload } from "react-icons/fa";
 import SectionHeader from '../SectionHeader';
 import resources from './resourcesData';
+import ResourceItem from '../ResourceItem';
 const ResourcesSection = () => {
+
 
     const handleResourceDownload = (title) => {
         swal({
@@ -22,19 +23,12 @@ const ResourcesSection = () => {
                     {
                         resources.map((resource) => {
                             return(
-                                <div className={styles.resources_item} key={resource.id} onClick={() => handleResourceDownload(resource.text)}>
-                                    <div className={styles.resources_image}>
-                                        <img src={resource.img} alt={resource.text}/>
-                                    </div>
-                                    <div className={styles.resources_name}>
-                                        <p>{resource.text} <FaDownload className={styles.download_icon} /></p>
-                                    </div>
-                                </div>
+                               <ResourceItem key={resource.id} title={resource.text} image={resource.img} file_download={resource.file_download}/>
                             )
                         })
                     }
                 </div>
-            </div>
+            </div>      
         </div>
     )
 }

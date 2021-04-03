@@ -34,7 +34,7 @@ const ConferenceTimer = (props) => {
     return(
         <div className={styles._}>
             {
-                timeUp ?  <h2 className={styles.in_session}>Event currently in session</h2> : 
+                timeUp ?  <h2 className={styles.in_session}>Conference currently in session</h2> : 
                 <div className={styles.timer_container}>
                     <div className={styles.time_item}>
                         <h2>{days}</h2>

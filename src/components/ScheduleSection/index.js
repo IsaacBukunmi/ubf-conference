@@ -8,10 +8,12 @@ import styles from './index.module.scss';
 import PrimaryButton from '../ButtonElement';
 import schedule_data from './scheduleData';
 
+
 const ScheduleSection = () => {
 
     const [value, setValue] = useState(0)
     const{ programs } = schedule_data[value]
+    
 
     const handleScheduleDownload = () => {
         swal({
