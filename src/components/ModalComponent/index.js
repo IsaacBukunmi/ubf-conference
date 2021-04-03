@@ -17,8 +17,7 @@ function ModalComponent(props) {
                     </div>
                     <div className={styles.header}>
                         <h2>{props.title}</h2>
-                        <p>Find and download {props.title} materials here.</p>
-                        <p>Click on the links below to download the materials</p>
+                        <p>Click on the links below to download {props.title} materials</p>
                     </div>
                     <div className={styles.item_container}>
                         <ul>
