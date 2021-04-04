@@ -22,8 +22,14 @@ const ResourcesSection = () => {
                 <div className={styles.resources_section}>
                     {
                         resources.map((resource) => {
+                            const text_files = resource.file_download?.map((file) => (
+                                file?.text_files
+                            ))
+                            const audio_files = resource.file_download?.map((file) => (
+                                file?.audio_files
+                            ))
                             return(
-                               <ResourceItem key={resource.id} title={resource.text} image={resource.img} file_download={resource.file_download}/>
+                               <ResourceItem key={resource.id} title={resource.text} image={resource.img} file_download={resource.file_download} text_files={text_files} audio_files={audio_files}/>
                             )
                         })
                     }

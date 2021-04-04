@@ -46,14 +46,30 @@
                 }
             }
             .item_container{
-               ul{
+               
+                ul{
                    line-height: 2em;
+                   list-style: none;
                    li{
+                       .type_icon{
+                         color:rgb(2, 176, 235);
+                         font-size: 18px;
+                       }
                         a{
                             color:rgb(2, 176, 235);
-                            text-decoration: underline;
+                            text-decoration: none;
                             font-style: italic;
                             font-size: 18px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+
+                        &:before{
+                            content: "•";
+                            font-size: 170%; 
+                            padding-right: 5px;
+                            color: rgb(6,4,50);
                         }
                    }
                }

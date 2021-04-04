@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
+import ConferenceGallery from '../components/ConferenceGallery';
 import ExtraInfo from '../components/ExtraInfo';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
@@ -23,6 +24,7 @@ const ConferencePage = () => {
             <ResourcesSection />
             <TestimonySection />
             <ScheduleSection />
+            {/* <ConferenceGallery /> */}
             <NumberSection />
             <Footer/>
         </>

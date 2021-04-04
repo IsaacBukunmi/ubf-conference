@@ -3,7 +3,7 @@ import { FaDownload } from "react-icons/fa";
 import styles from './index.module.scss'
 import ModalComponent from '../ModalComponent';
 
-const ResourceItem = ({title, image, file_download}) => {
+const ResourceItem = ({title, image, file_download, text_files, audio_files}) => {
     const [openModal, setOpenModal] = useState(false);
     return(
         <>
@@ -15,7 +15,7 @@ const ResourceItem = ({title, image, file_download}) => {
                 <p>{title} <FaDownload className={styles.download_icon} /></p>
             </div>
         </div>
-            {openModal ? <ModalComponent setOpenModal={setOpenModal} title={title} file_download={file_download}/> : null}
+            {openModal ? <ModalComponent setOpenModal={setOpenModal} title={title} file_download={file_download} text_files={text_files} audio_files={audio_files}/> : null}
         </>
     )
 }
