@@ -28,25 +28,25 @@ const resources = [
             {   
                 id:4,
                 file_link:"https://drive.google.com/uc?export=download&id=1vqXa2JLxzYjdX4MsPw0zpDSMxhb0hNj0",
-                file_title: "Christ in me (Bro Alvin)",
+                file_title: "The suffering and glory of the servant of God (Bro Alvin)",
                 file_type:"text"
             },
             {   
                 id:5,
                 file_link:"https://drive.google.com/uc?export=download&id=1c5-dLy9KMPaWEYEVC49uECgqXnTQ6_hr",
-                file_title: "Christ in me",
+                file_title: "The suffering and glory of the servant of God",
                 file_type:"audio"
             },
             {   
                 id:6,
                 file_link:"https://drive.google.com/uc?export=download&id=1ycyIvW5y3kIGGz-0UFu46nfqzUGtN4Eq",
-                file_title: "The suffering and glory of God's Servant (Bro Isaac 0.)",
+                file_title: "The Gospel of Jesus Christ (Bro Isaac 0.)",
                 file_type:"text"
             },
             {   
                 id:7,
                 file_link:"https://drive.google.com/uc?export=download&id=1ycyIvW5y3kIGGz-0UFu46nfqzUGtN4Eq",
-                file_title: "The suffering and glory of God's Servant",
+                file_title: "The Gospel of Jesus Christ",
                 file_type:"audio"
             }
             // {
